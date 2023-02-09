@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+/* GENERAL - NAVBAR FOOTER BODY */
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;color: white;
+    background-color: black;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    margin: 20px;
+}
+
+header{
+    background-color: dimgray;
+}
+
+ul{
+    list-style-type: none;
+}
+
+footer{
+    background-color: dimgray;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+footer ul img{
+    padding: 20px;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-bar img{
+    height: 250px;
+    margin-left: 15px;
+}
+
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.nav-bar ul li{
+    font-size: 20px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.nav-bar li a{
+    padding: 10px;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-decoration:none;
+}
+
+a, a:visited { 
+    color: white;
+    padding-left: 5px;
+} 
+a:hover, a:active { 
+    color: black; 
+} 
+.nav-bar a:hover, a:active { 
+    color: gray; 
+} 
+
+
+/* INDEX - PROXIMOS SHOWS */
+.title1{
+    grid-area: title;
+}
+.uno{
+    grid-area: uno;
+}
+.dos{
+    grid-area: dos;
+}
+
+.tres{
+    grid-area: tres;
+}
+
+.gridshows{
+    display: grid;
+    grid-template-areas: 
+    "title title title"
+    "uno dos tres";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 90px 1fr;
+}
+
+.show{
+    padding: 40px;
+    background-color: dimgray;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition-property: all;
+    transition-duration: 3s;
+}
+.show a , p{
+    display: flex;
+    justify-content: center;
+}
+.show img {
+    margin: 10px;
+    height: 500px;
+}
+
+/* DISCOGRAFIA.HTML */
+
+.title2{
+    grid-area: title;
+}
+
+.d1{
+    grid-area: d1;
+}
+
+.d2{
+    grid-area: d2;
+}
+
+.d3{
+    grid-area: d3;
+}
+
+.d4{
+    grid-area: d4;
+}
+
+.d5{
+    grid-area: d5;
+}
+
+.d6{
+    grid-area: d6;
+}
+
+.griddiscos{
+    display: grid;
+    grid-template-areas: 
+    "title title title"
+    "d1 d2 d3"
+    "d4 d5 d6";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+}
+
+.disco{
+    padding: 20px;
+    background-color: dimgray;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.disco ul{
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-end;
+}
+
+.disco img {
+    height: 200px;
+    width: 200px;
+}
+
+.plataformas img{
+    height: 50px;
+    width: 50px;
+}
+
+.disco p{
+    font-family: serif;
+    font-size: small;
+}
+
+.disco h2{
+    padding: 20px;
+}
+
+
+.songs{
+    padding: 25px;
+}
+
+/* ULTLANZA.HTML */
+.ult-lanza{
+    display: grid;
+    grid-template-areas: 
+    "tapa repro"
+    "laptra laptra";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 10px;
+    gap: 5px;
+}
+
+.tapa{
+    grid-area: tapa;
+    display: flex;
+    justify-self: flex-end;
+}
+.repro{
+    grid-area: repro;
+}
+.laptra{
+    grid-area: laptra;
+}
+
+.ult-lanza img{
+    height: 600px;
+    border-radius: 12px;
+}
+.ult-lanza{
+    padding: 20px;
+    margin: 40px;
+    background-color: dimgray;
+}
+
+.ult-lanza p{
+    font-family: serif;
+    font-size: small;
+    display: flex;
+}
+
+
+/* BIOGRAFIA.HTML */
+
+.bio{
+    padding: 40px;
+    margin: 40px;
+    background-color: dimgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bio img{
+    height: 500px;
+}
+
+.bio p {
+    padding: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+/* CONTACTO.HTML */
+
+.gridcontacto{
+    display: flex;
+    justify-content: center;
+}
+.formulario{
+    padding: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    text-align: left;
+    background-color: dimgray;
+    line-height: 21px;
+}
+
+.item{
+    padding: 5px;
+}
+.textarea{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* media queris */
+@media screen and (max-width: 1200px) {
+    .gridshows{
+        grid-template-areas: 
+        "title title"
+        "uno dos"
+        "tres tres";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .show{
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+    .ult-lanza{
+        grid-template-areas:
+        "tapa repro"
+        "laptra laptra";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto ;
+        gap: 5px;
+    }
+    .ult-lanza .tapa{
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        width: 400px;
+        height: 400PX;
+    }
+    .repro{
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        width: 400px;
+        height: 400px;
+    }
+    .griddiscos{
+        grid-template-areas: 
+        "title title"
+        "d1 d2"
+        "d3 d4"
+        "d5 d6";
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+    .bio{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bio img{
+        height: auto;
+    }
+}
+@media screen and (max-width: 992px) {
+    .gridshows{
+        grid-template-areas: 
+        "title title"
+        "uno dos"
+        "tres tres";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .show{
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+    .ult-lanza{
+        grid-template-areas:
+        "tapa repro"
+        "laptra laptra";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto ;
+        gap: 5px;
+    }
+    .ult-lanza .tapa{
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        width: 400px;
+        height: 400PX;
+    }
+    .repro{
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        width: 400px;
+        height: 400px;
+    }
+    .griddiscos{
+        grid-template-areas: 
+        "title title"
+        "d1 d2"
+        "d3 d4"
+        "d5 d6";
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+    .bio{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bio img{
+        height: auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav-bar{
+        flex-direction: column;
+    }
+    
+    .nav-bar ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gridshows{
+        grid-template-areas: 
+        "title"
+        "uno"
+        "dos"
+        "tres";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .ult-lanza{
+        grid-template-areas:
+        "laptra" 
+        "tapa"
+        "repro";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto ;
+        gap: 5px;
+    }
+    .ult-lanza .tapa{
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        width: 456px;
+        height: 456PX;
+    }
+    .repro{
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        width: 456px;
+    }
+    .griddiscos{
+        grid-template-areas: 
+        "title title"
+        "d1 d2"
+        "d3 d4"
+        "d5 d6";
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+    .disco{
+        margin: 10px;
+        margin-bottom: 25px;
+    }
+    .bio{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bio img{
+        height: auto;
+    }
+}
+@media screen and (max-width: 576px) {
+    .nav-bar{
+        flex-direction: column;
+    }
+    
+    .nav-bar ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ul img{
+        padding: 10px;
+    }
+
+    .gridshows{
+        grid-template-areas: 
+        "title"
+        "uno"
+        "dos"
+        "tres";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .ult-lanza{
+        grid-template-areas:
+        "laptra" 
+        "tapa"
+        "repro";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto ;
+        gap: 5px;
+    }
+    .ult-lanza .tapa{
+        width: 456px;
+        height: 456PX;
+    }
+    .repro{
+        width: 456px;
+    }
+    .griddiscos{
+        grid-template-areas: 
+        "title"
+        "d1"
+        "d2"
+        "d3"
+        "d4"
+        "d5"
+        "d6";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .bio{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bio img{
+        height: auto;
+    }
+}
+@media screen and (max-width: 428px) {
+    .nav-bar img{
+        height: 300px;
+    }
+    .gridshows{
+        grid-template-areas: 
+        "title"
+        "uno"
+        "dos"
+        "tres";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .show img {
+        margin: 10px;
+        height: 300px;
+    }
+    .ult-lanza{
+        grid-template-areas:
+        "laptra" 
+        "tapa"
+        "repro";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 5px;
+    }
+    .ult-lanza .tapa{
+        width: 300px;
+        height: 300px;
+    }
+    .repro{
+        width: 300px;
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Bestia Bebé | Contacto</title>
+</head>
+<body>
+    <header class="nav-bar">
+        <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./ult-lanza.html">Ultimo Lanzamiento</a></li>
+                <li><a href="./discografia.html">Discografia</a></li>
+                <li><a href="./biografia.html">Biografia</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 data-aos="fade-down">Contacto</h1>
+        <article class="gridcontacto" data-aos="fade-down">
+            <form action="formulario.php">
+                <fieldset class="formulario">
+                    <div class="item">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+                    <div class="item">
+                        <label for="pais">Nacionalidad</label>
+                        <select name="pais" id="pais">
+                            <option value="arg">Argentina</option>
+                            <option value="per">Peru</option>
+                            <option value="chl">Chile</option>
+                            <option value="uru">Uruguay</option>
+                            <option value="col">Colombia</option>
+                            <option value="bol">Bolivia</option>
+                            <option value="par">Paraguay</option>
+                            <option value="esp">España</option>
+                            <option value="otro">Otra</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                    <div class="item">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="item">
+                        <label for="asunto">Asunto:</label>
+                        <input type="radio" name="asunto" id="reclamo">
+                        <label for="reclamo">Reclamo</label>
+                        <input type="radio" name="asunto" id="consulta">
+                        <label for="consulta">Consulta</label>
+                    </div>
+                    <div class="textarea">
+                        <label for="coment">Tu Mensaje</label>
+                        <textarea name="coment" id="coment" cols="30" rows="5" placeholder="......."></textarea>
+                    </div>
+                    <div class="item">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="https://twitter.com/bestiabebe" target="_blank"><img src="../img/twitter.png" alt="twit"></a></li>
+            <li><a href="https://www.facebook.com/bestiabebe" target="_blank"><img src="../img/facebook.png" alt="face"></a></li>
+            <li><a href="https://open.spotify.com/artist/3j7kmtxJ0aptdHr9ZCnEkp" target="_blank"><img src="../img/spotify.png" alt="spotify"></a></li>
+            <li><a href="https://www.youtube.com/user/bestiabebetv" target="_blank"><img src="../img/youtube.png" alt="youtube"></a></li>
+            <li><a href="https://instagram.com/bestiabebe" target="_blank"><img src="../img/instagram.png" alt="instagram"></a></li>
+        </ul>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

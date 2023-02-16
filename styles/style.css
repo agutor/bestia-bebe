@@ -18,7 +18,7 @@ h1{
 }
 
 header{
-    background-color: dimgray;
+    background-color: black;
 }
 
 ul{
@@ -26,7 +26,7 @@ ul{
 }
 
 footer{
-    background-color: dimgray;
+    background-color: #2B3035;
 }
 footer ul{
     display: flex;
@@ -37,49 +37,21 @@ footer ul img{
     padding: 20px;
 }
 
-.nav-bar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
+.navbar ul li{
+    font-size: 20px;
 }
-
-.nav-bar img{
-    height: 250px;
+.navbar-brand img{
+    height: 80px;
     margin-left: 15px;
 }
 
-.nav-bar ul{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-}
-
-.nav-bar ul li{
-    font-size: 20px;
-    padding: 20px;
-    text-decoration: none;
-}
-
-.nav-bar li a{
-    padding: 10px;
-    background-color: black;
-    border: 3px solid black;
-    border-radius: 10px;
-    text-decoration:none;
-}
-
-a, a:visited { 
+a, a:visited {
     color: white;
     padding-left: 5px;
-} 
-a:hover, a:active { 
-    color: black; 
-} 
-.nav-bar a:hover, a:active { 
-    color: gray; 
-} 
-
+}
+a:hover, a:active {
+    color: black;
+}
 
 /* INDEX - PROXIMOS SHOWS */
 .title1{
@@ -98,7 +70,7 @@ a:hover, a:active {
 
 .gridshows{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "title title title"
     "uno dos tres";
     grid-template-columns: 1fr 1fr 1fr;
@@ -107,15 +79,13 @@ a:hover, a:active {
 
 .show{
     padding: 40px;
-    background-color: dimgray;
+    background-color: #2B3035;
     margin: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition-property: all;
-    transition-duration: 3s;
 }
-.show a , p{
+.show , a , p{
     display: flex;
     justify-content: center;
 }
@@ -156,7 +126,7 @@ a:hover, a:active {
 
 .griddiscos{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "title title title"
     "d1 d2 d3"
     "d4 d5 d6";
@@ -166,7 +136,7 @@ a:hover, a:active {
 
 .disco{
     padding: 20px;
-    background-color: dimgray;
+    background-color: #2B3035;
     margin: 40px;
     display: flex;
     flex-direction: column;
@@ -207,7 +177,7 @@ a:hover, a:active {
 /* ULTLANZA.HTML */
 .ult-lanza{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "tapa repro"
     "laptra laptra";
     grid-template-columns: 1fr 1fr;
@@ -234,7 +204,7 @@ a:hover, a:active {
 .ult-lanza{
     padding: 20px;
     margin: 40px;
-    background-color: dimgray;
+    background-color: #2B3035;
 }
 
 .ult-lanza p{
@@ -249,7 +219,7 @@ a:hover, a:active {
 .bio{
     padding: 40px;
     margin: 40px;
-    background-color: dimgray;
+    background-color: #2B3035;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -280,7 +250,7 @@ a:hover, a:active {
     margin-bottom: 40px;
     border-radius: 12px;
     text-align: left;
-    background-color: dimgray;
+    background-color: #2B3035;
     line-height: 21px;
 }
 
@@ -296,7 +266,7 @@ a:hover, a:active {
 /* media queris */
 @media screen and (max-width: 1200px) {
     .gridshows{
-        grid-template-areas: 
+        grid-template-areas:
         "title title"
         "uno dos"
         "tres tres";
@@ -332,7 +302,7 @@ a:hover, a:active {
         height: 400px;
     }
     .griddiscos{
-        grid-template-areas: 
+        grid-template-areas:
         "title title"
         "d1 d2"
         "d3 d4"
@@ -350,7 +320,7 @@ a:hover, a:active {
 }
 @media screen and (max-width: 992px) {
     .gridshows{
-        grid-template-areas: 
+        grid-template-areas:
         "title title"
         "uno dos"
         "tres tres";
@@ -386,7 +356,7 @@ a:hover, a:active {
         height: 400px;
     }
     .griddiscos{
-        grid-template-areas: 
+        grid-template-areas:
         "title title"
         "d1 d2"
         "d3 d4"
@@ -403,18 +373,8 @@ a:hover, a:active {
     }
 }
 @media screen and (max-width: 768px) {
-    .nav-bar{
-        flex-direction: column;
-    }
-    
-    .nav-bar ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .gridshows{
-        grid-template-areas: 
+        grid-template-areas:
         "title"
         "uno"
         "dos"
@@ -424,7 +384,7 @@ a:hover, a:active {
     }
     .ult-lanza{
         grid-template-areas:
-        "laptra" 
+        "laptra"
         "tapa"
         "repro";
         grid-template-columns: 1fr;
@@ -445,7 +405,7 @@ a:hover, a:active {
         width: 456px;
     }
     .griddiscos{
-        grid-template-areas: 
+        grid-template-areas:
         "title title"
         "d1 d2"
         "d3 d4"
@@ -466,22 +426,12 @@ a:hover, a:active {
     }
 }
 @media screen and (max-width: 576px) {
-    .nav-bar{
-        flex-direction: column;
-    }
-    
-    .nav-bar ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     footer ul img{
         padding: 10px;
     }
 
     .gridshows{
-        grid-template-areas: 
+        grid-template-areas:
         "title"
         "uno"
         "dos"
@@ -491,7 +441,7 @@ a:hover, a:active {
     }
     .ult-lanza{
         grid-template-areas:
-        "laptra" 
+        "laptra"
         "tapa"
         "repro";
         grid-template-columns: 1fr;
@@ -506,7 +456,7 @@ a:hover, a:active {
         width: 456px;
     }
     .griddiscos{
-        grid-template-areas: 
+        grid-template-areas:
         "title"
         "d1"
         "d2"
@@ -526,11 +476,8 @@ a:hover, a:active {
     }
 }
 @media screen and (max-width: 428px) {
-    .nav-bar img{
-        height: 300px;
-    }
     .gridshows{
-        grid-template-areas: 
+        grid-template-areas:
         "title"
         "uno"
         "dos"
@@ -544,7 +491,7 @@ a:hover, a:active {
     }
     .ult-lanza{
         grid-template-areas:
-        "laptra" 
+        "laptra"
         "tapa"
         "repro";
         grid-template-columns: 1fr;

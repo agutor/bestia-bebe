@@ -5,7 +5,6 @@
     margin:0;
     padding: 0;
 }
-
 body{
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
@@ -15,14 +14,12 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
-
 h1{
     font-size: 50px;
     padding: 20px;
     margin: 20px;
     margin-top: 150px
 }
-
 ol, ul{
     padding-left: 0;
 }
@@ -33,7 +30,6 @@ p{
     height: 80px;
     margin-left: 15px;
 }
-
 .navbar ul li{
     font-size: 20px;
 }
@@ -71,9 +67,6 @@ footer ul img{
     align-items: center;
     margin: 40px;
 }
-.show img {
-    width: 250px;
-} 
 
 /* Ultimo lanzamiento */
 
@@ -108,13 +101,10 @@ footer ul img{
     align-items: center;
     justify-content: flex-start;
 }
-.disco img {
-    height: 200px;
-    width: 200px;
-}
 .plataformas img{
     height: 50px;
     width: 50px;
+    margin: 5px;
 }
 .disco p{
     font-family: serif;
@@ -132,9 +122,6 @@ footer ul img{
     padding: 10px;
     margin: 40px;
     background-color: #2B3035;
-}
-.bio img{
-    width: 250px;
 }
 .bio p {
     padding: 10px;
@@ -161,14 +148,15 @@ footer ul img{
     line-height: 21px;
 }
 
-.item{
+/* .item{
     padding: 5px;
-}
+} */
 .textarea{
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
+
+
 /* Media Queris */
 @media (min-width:500px){
     .gridshows{
@@ -192,11 +180,7 @@ footer ul img{
     .tres{
         grid-area: tres;
     }
-    .show img {
-        width: 230px;
-        height: 300px;
-    }
-    .uno, .dos, .tres{
+        .uno, .dos, .tres{
         margin: 10px;
     }
 
@@ -207,18 +191,38 @@ footer ul img{
         width: 350px;
     }
 
-    .disco img {
-        height: 350px;
-        width: 350px;
+    .title2{
+        grid-area: title;
     }
-    .plataformas img{
-        height: 50px;
-        width: 50px;
+    .d1{
+        grid-area: d1;
+    }
+    .d2{
+        grid-area: d2;
+    }
+    .d3{
+        grid-area: d3;
+    }
+    .d4{
+        grid-area: d4;
+    }
+    .d5{
+        grid-area: d5;
+    }
+    .d6{
+        grid-area: d6;
+    }
+    .griddiscos{
+        display: grid;
+        grid-template-areas:
+        "title title"
+        "d1 d2"
+        "d3 d4"
+        "d5 d6";
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto 1fr 1fr 1fr;
     }
 
-    .bio img{
-        width: 400px;
-    }
 }
 @media (min-width:768px){
     .gridshows{
@@ -255,57 +259,10 @@ footer ul img{
         grid-area: laptra;
     }
 
-    .disco img {
-        height: 200px;
-        width: 200px;
-    }
-    .plataformas img{
-        height: 50px;
-        width: 50px;
-    }
-    .griddiscos{
-        display: grid;
-        grid-template-areas:
-        "title title"
-        "d1 d2"
-        "d3 d4"
-        "d5 d6";
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: auto 1fr 1fr 1fr;
-    }
-    .title2{
-        grid-area: title;
-    }
-    .d1{
-        grid-area: d1;
-    }
-    .d2{
-        grid-area: d2;
-    }
-    .d3{
-        grid-area: d3;
-    }
-    .d4{
-        grid-area: d4;
-    }
-    .d5{
-        grid-area: d5;
-    }
-    .d6{
-        grid-area: d6;
-    }
-
-    .bio img{
-        width: 600px;
-    }
 }
 @media(min-width:992px){
     .gridshows{
         gap: 20px;
-    }
-    .show img {
-        width: 350px;
-        height: 500px;
     }
 
     .ult-lanza img{
@@ -316,42 +273,6 @@ footer ul img{
         width: 450px;
     }
 
-    .disco img{
-        height: 350px;
-        width: 350px;
-    }
-    .plataformas img{
-        height: 50px;
-        width: 50px;
-    }
-
-    .bio img{
-        width: 700px;
-    }
-}
-
-@media(min-width:1200px){
-        .show img {
-        height: 550px;
-        width: 400px;
-    }
-
-    .ult-lanza img{
-        width: 600px;
-    }
-    .repro{
-        height: 600px;
-        width: 600px;
-    }
-
-    .disco img{
-        height: 200px;
-        width: 200px;
-    }
-    .plataformas img{
-        height: 50px;
-        width: 50px;
-    }
     .griddiscos{
         display: grid;
         grid-template-areas:
@@ -361,20 +282,34 @@ footer ul img{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto 1fr 1fr;
     }
+}
+
+@media(min-width:1200px){
+
+    .ult-lanza img{
+        width: 600px;
+    }
+    .repro{
+        height: 600px;
+        width: 600px;
+    }
+
     .bio{
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-}
-
-@media(min-width:1450px){
-    .disco img{
-        height: 350px;
-        width: 350px;
+    .gridbio{
+        display: grid;
+        grid-template-areas:
+        "fotos texto";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
     }
-    .plataformas img{
-        height: 50px;
-        width: 50px;
+    .carousel{
+        grid-area: fotos;
+    }
+    .texto{
+        grid-area: texto;
     }
 }

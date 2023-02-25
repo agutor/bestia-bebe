@@ -14,11 +14,14 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
-h1{
+h1, h2{
     font-size: 50px;
     padding: 20px;
     margin: 20px;
-    margin-top: 150px
+    margin-top: 150px;
+}
+h2{
+    margin-top: 0;
 }
 ol, ul{
     padding-left: 0;
@@ -35,6 +38,7 @@ p{
 }
 a, a:visited {
     color: white;
+    text-decoration: none;
 }
 a:hover, a:active {
     color: black;
@@ -56,7 +60,7 @@ footer ul img{
     margin: 10px;
 }
 
-/* INDEX - PROXIMOS SHOWS */
+/* INDEX - PROXIMOS SHOWS - MERCH */
 
 .uno, .dos, .tres{
     padding: 40px;
@@ -67,7 +71,16 @@ footer ul img{
     align-items: center;
     margin: 40px;
 }
-
+.font-contraste1{
+    color: black;
+}
+.card{
+    width: 18rem;
+    margin-bottom: 35px;
+}
+#carouselxxl .card{
+    width: 20rem;
+}
 /* Ultimo lanzamiento */
 
 .ult-lanza img{
@@ -176,8 +189,11 @@ footer ul img{
     .tres{
         grid-area: tres;
     }
-        .uno, .dos, .tres{
+    .uno, .dos, .tres{
         margin: 10px;
+    }
+    .font-contraste2{
+        color: black;
     }
 
     .ult-lanza img{
@@ -222,12 +238,12 @@ footer ul img{
 }
 @media (min-width:768px){
     .gridshows{
-        display: grid;
         grid-template-areas:
         "title title title"
         "uno dos tres";
         grid-template-columns: auto auto auto ;
         grid-template-rows: auto auto auto;
+        justify-content: space-evenly;
     }
 
     .ult-lanza img{
@@ -270,7 +286,6 @@ footer ul img{
     }
 
     .griddiscos{
-        display: grid;
         grid-template-areas:
         "title title title"
         "d1 d2 d3"
@@ -281,6 +296,11 @@ footer ul img{
 }
 
 @media(min-width:1200px){
+
+    .show{
+        width: 350px;
+        height: auto;
+    }
 
     .ult-lanza img{
         width: 600px;
@@ -307,5 +327,12 @@ footer ul img{
     }
     .texto{
         grid-area: texto;
+    }
+}
+
+@media(min-width:1400px){
+    .show{
+        width: 450px;
+        height: auto;
     }
 }

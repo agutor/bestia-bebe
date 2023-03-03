@@ -1,0 +1,68 @@
+.ult-lanza {
+	@include boxModel(20px, 40px);
+	background-color: $colorAcento;
+	img {
+		width: 250px;
+		border-radius: 12px;
+	}
+	p {
+		font-family: $fontSecundaria;
+		font-size: small;
+	}
+}
+.laptra {
+	@include flex(flex, row, center, flex-start)
+}
+
+.ult-lanza{
+	@include sm(){
+		img {
+			width: 350px;
+		}
+	}
+	@include md(){
+		@include gridTemp (2,2);
+		grid-template-areas: "tapa repro" "laptra laptra";
+		gap: 5px;
+		img {
+			width: 352px;
+		}
+	}
+	@include lg(){
+		img {
+			width: 450px;
+		}
+	}
+	@include xl(){
+		img {
+			width: 600px;
+		}
+	}
+}
+.repro{
+	grid-area: repro;
+	@include sm(){
+		width: 350px;
+	}
+	@include md(){
+		height: 352px;
+	}
+	@include lg(){
+		height: 450px;
+		width: 450px;
+	}
+	@include xl(){
+		height: 600px;
+		width: 600px;
+	}
+}
+.laptra {
+	grid-area: laptra;
+}
+.tapa {
+	grid-area: tapa;
+	@include md(){
+		display: flex;
+		justify-self: flex-end;
+	}
+}

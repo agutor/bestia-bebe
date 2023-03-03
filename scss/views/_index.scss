@@ -1,0 +1,59 @@
+.uno, .dos, .tres{
+	@include boxModel (40px, 40px);
+	background-color: $colorAcento;
+	@include flex(flex, column, center,center);
+}
+.font-contraste1{
+    color: $color_2;
+}
+.card{
+    width: 18rem;
+    margin-bottom: 35px;
+}
+#carouselxxl .card{
+    width: 20rem;
+}
+.title1 {
+	grid-area: title;
+}
+.uno {
+	grid-area: uno;
+	margin: 10px;
+}
+.dos {
+	grid-area: dos;
+	margin: 10px;
+}
+.tres {
+	grid-area: tres;
+	margin: 10px;
+}
+.gridshows{
+	@include sm(){
+		@include gridTemp(2, 3);
+		grid-template-areas: "title title ""uno dos" "tres cuatro";
+	}
+	@include md(){
+		@include gridTemp(3, 3);
+		grid-template-areas: "title title title" "uno dos tres";
+		justify-content: space-evenly;
+	}
+	@include lg(){
+		gap:20px;
+	}
+}
+.font-contraste2 {
+	@include sm(){
+		color: $color_2;
+	}
+}
+.show{
+	@include xl(){
+		width: 350px;
+		height: auto;
+	}
+	@include xxl(){
+		width: 450px;
+		height: auto;
+	}
+}

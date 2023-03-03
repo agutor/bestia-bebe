@@ -119,7 +119,7 @@ footer ul img {
 @media (min-width: 500px) {
   .gridshows {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "title title " "uno dos" "tres cuatro";
   }
@@ -127,7 +127,7 @@ footer ul img {
 @media (min-width: 768px) {
   .gridshows {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "title title title" "uno dos tres";
     justify-content: space-evenly;
@@ -180,7 +180,7 @@ footer ul img {
   }
   .gridbio {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(1, auto);
     grid-template-areas: "fotos texto";
   }
@@ -327,7 +327,7 @@ footer ul img {
 @media (min-width: 768px) {
   .ult-lanza {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "tapa repro" "laptra laptra";
     gap: 5px;
@@ -388,10 +388,3 @@ footer ul img {
 }
 
 /*# sourceMappingURL=style.css.map */
-
-@media(min-width:1400px){
-    .show{
-        width: 450px;
-        height: auto;
-    }
-}

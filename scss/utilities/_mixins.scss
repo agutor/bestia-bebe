@@ -12,9 +12,9 @@
     padding: $padd;
     margin: $marg;
 }
-@mixin gridTemp($col, $row){
+@mixin gridTemp($col, $row, $auto:auto){
     display: grid;
-    grid-template-columns: repeat($col, 1fr);
+    grid-template-columns: repeat($col, $auto);
     grid-template-rows: repeat($row, auto);
 }
 @mixin sm(){

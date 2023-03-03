@@ -32,12 +32,12 @@
 
 .griddiscos{
 	@include md(){
-		@include gridTemp(2,4);
+		@include gridTemp(2,4,1fr);
 		grid-template-areas: "title title" "d1 d2" "d3 d4" "d5 d6";
 		justify-content: space-evenly
 	}
 	@include lg(){
-		@include gridTemp(3,3);
+		@include gridTemp(3,3,1fr);
 		grid-template-areas: "title title title" "d1 d2 d3" "d4 d5 d6";
 	}
 }

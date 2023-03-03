@@ -1,311 +1,390 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
 
-/* GENERAL - NAVBAR  BODY FOOTER */
-*{
-    margin:0;
-    padding: 0;
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-body{
-    font-family: 'Roboto Condensed', sans-serif;
-    color: white;
-    background-color: black;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+
+h1, h2 {
+  font-size: 50px;
+  padding: 20px;
+  margin: 20px;
+  margin-top: 150px;
 }
-h1{
-    font-size: 50px;
-    padding: 20px;
-    margin: 20px;
-    margin-top: 150px
+
+h2 {
+  margin-top: 0;
 }
-ol, ul{
-    padding-left: 0;
+
+ol, ul {
+  padding-left: 0;
 }
-p{
-    margin-bottom: 0;
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
 }
-.navbar-brand img{
-    height: 80px;
-    margin-left: 15px;
+
+p {
+  margin-bottom: 0;
 }
-.navbar ul li{
-    font-size: 20px;
+
+a {
+  color: white;
+  text-decoration: none;
 }
-a, a:visited {
-    color: white;
+a:visited {
+  color: white;
 }
-a:hover, a:active {
+a:hover {
+  color: black;
+}
+a:active {
+  color: black;
+}
+
+.navbar-brand img {
+  height: 80px;
+  margin-left: 15px;
+}
+
+.navbar ul li {
+  font-size: 20px;
+}
+
+footer {
+  background-color: #2B3035;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 0;
+}
+footer ul img {
+  margin: 10px;
+}
+
+.uno, .dos, .tres {
+  padding: 40px;
+  margin: 40px;
+  background-color: #2B3035;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.font-contraste1 {
+  color: black;
+}
+
+.card {
+  width: 18rem;
+  margin-bottom: 35px;
+}
+
+#carouselxxl .card {
+  width: 20rem;
+}
+
+.title1 {
+  grid-area: title;
+}
+
+.uno {
+  grid-area: uno;
+  margin: 10px;
+}
+
+.dos {
+  grid-area: dos;
+  margin: 10px;
+}
+
+.tres {
+  grid-area: tres;
+  margin: 10px;
+}
+
+@media (min-width: 500px) {
+  .gridshows {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "title title " "uno dos" "tres cuatro";
+  }
+}
+@media (min-width: 768px) {
+  .gridshows {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "title title title" "uno dos tres";
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 992px) {
+  .gridshows {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 500px) {
+  .font-contraste2 {
     color: black;
-}
-footer{
-    background-color: #2B3035;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    margin-bottom: 0;
-}
-footer, ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style-type: none;
-}
-footer ul img{
-    margin: 10px;
+  }
 }
 
-/* INDEX - PROXIMOS SHOWS */
-
-.uno, .dos, .tres{
-    padding: 40px;
-    background-color: #2B3035;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 40px;
+@media (min-width: 1200px) {
+  .show {
+    width: 350px;
+    height: auto;
+  }
+}
+@media (min-width: 1400px) {
+  .show {
+    width: 450px;
+    height: auto;
+  }
 }
 
-/* Ultimo lanzamiento */
-
-.ult-lanza img{
-    width: 250px;
-    border-radius: 12px;
-}
-.ult-lanza{
-    padding: 20px;
-    margin: 40px;
-    background-color: #2B3035;
-}
-.ult-lanza p{
-    font-family: serif;
-    font-size: small;
-    display: flex;
-}
-.laptra{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-/* Discografia */
-
-.disco{
-    padding: 20px;
-    background-color: #2B3035;
-    margin: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-.plataformas img{
-    height: 50px;
-    width: 50px;
-    margin: 5px;
-}
-.disco p{
-    font-family: serif;
-    font-size: small;
-}
-.disco h2{
-    padding: 20px;
-}
-.songs{
-    padding: 25px;
-}
-
-/* Biografia */
-.bio{
-    padding: 10px;
-    margin: 40px;
-    background-color: #2B3035;
+.bio {
+  padding: 10px;
+  margin: 40px;
+  background-color: #2B3035;
 }
 .bio p {
-    padding: 10px;
-    font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 2px;
-    word-spacing: 3px;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  margin-top: 5px;
 }
 
-/* Contacto */
-
-.gridcontacto{
+@media (min-width: 1200px) {
+  .bio {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: flex-start;
+  }
+  .gridbio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "fotos texto";
+  }
 }
-.formulario{
-    padding: 40px;
-    padding-left: 60px;
-    padding-right: 60px;
-    margin-bottom: 40px;
-    border-radius: 12px;
-    text-align: left;
-    background-color: #2B3035;
-    line-height: 21px;
-}
-.textarea{
-    margin-top: 15px;
-    margin-bottom: 10px;
+.carousel {
+  grid-area: fotos;
 }
 
-
-/* Media Queris */
-@media (min-width:500px){
-    .gridshows{
-        display: grid;
-        grid-template-areas:
-        "title title "
-        "uno dos"
-        "tres cuatro";
-        grid-template-columns: auto auto ;
-        grid-template-rows: auto auto auto;
-    }
-    .title1{
-        grid-area: title;
-    }
-    .uno{
-        grid-area: uno;
-    }
-    .dos{
-        grid-area: dos;
-    }
-    .tres{
-        grid-area: tres;
-    }
-        .uno, .dos, .tres{
-        margin: 10px;
-    }
-
-    .ult-lanza img{
-        width: 350px;
-    }
-    .repro{
-        width: 350px;
-    }
-
-    .title2{
-        grid-area: title;
-    }
-    .d1{
-        grid-area: d1;
-    }
-    .d2{
-        grid-area: d2;
-    }
-    .d3{
-        grid-area: d3;
-    }
-    .d4{
-        grid-area: d4;
-    }
-    .d5{
-        grid-area: d5;
-    }
-    .d6{
-        grid-area: d6;
-    }
-    .griddiscos{
-        display: grid;
-        grid-template-areas:
-        "title title"
-        "d1 d2"
-        "d3 d4"
-        "d5 d6";
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: auto 1fr 1fr 1fr;
-    }
-
-}
-@media (min-width:768px){
-    .gridshows{
-        display: grid;
-        grid-template-areas:
-        "title title title"
-        "uno dos tres";
-        grid-template-columns: auto auto auto ;
-        grid-template-rows: auto auto auto;
-    }
-
-    .ult-lanza img{
-        width: 352px;
-    }
-    .ult-lanza{
-        display: grid;
-        grid-template-areas:
-        "tapa repro"
-        "laptra laptra";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 10px;
-        gap: 5px;
-    }
-    .tapa{
-        grid-area: tapa;
-        display: flex;
-        justify-self: flex-end;
-    }
-    .repro{
-        grid-area: repro;
-        height: 352px;
-    }
-    .laptra{
-        grid-area: laptra;
-    }
-
-}
-@media(min-width:992px){
-    .gridshows{
-        gap: 20px;
-    }
-
-    .ult-lanza img{
-        width: 450px;
-    }
-    .repro{
-        height: 450px;
-        width: 450px;
-    }
-
-    .griddiscos{
-        display: grid;
-        grid-template-areas:
-        "title title title"
-        "d1 d2 d3"
-        "d4 d5 d6";
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto 1fr 1fr;
-    }
+.texto {
+  grid-area: texto;
 }
 
-@media(min-width:1200px){
-
-    .ult-lanza img{
-        width: 600px;
-    }
-    .repro{
-        height: 600px;
-        width: 600px;
-    }
-
-    .bio{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .gridbio{
-        display: grid;
-        grid-template-areas:
-        "fotos texto";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-    }
-    .carousel{
-        grid-area: fotos;
-    }
-    .texto{
-        grid-area: texto;
-    }
+.gridcontacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
+
+.formulario {
+  padding: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  text-align: left;
+  background-color: #2B3035;
+  line-height: 21px;
+}
+
+.textarea {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.disco {
+  padding: 20px;
+  margin: 40px;
+  background-color: #2B3035;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.disco p {
+  font-family: serif;
+  font-size: small;
+}
+.disco h2 {
+  padding: 20px;
+}
+@media (min-width: 1400px) {
+  .disco img {
+    width: 450px;
+  }
+}
+
+.plataformas img {
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+}
+
+.songs {
+  padding: 25px;
+  width: 300px;
+}
+.songs li {
+  list-style-position: inside;
+}
+
+@media (min-width: 768px) {
+  .griddiscos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "title title" "d1 d2" "d3 d4" "d5 d6";
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 992px) {
+  .griddiscos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "title title title" "d1 d2 d3" "d4 d5 d6";
+  }
+}
+
+.title2 {
+  grid-area: title;
+}
+
+.d1 {
+  grid-area: d1;
+}
+
+.d2 {
+  grid-area: d2;
+}
+
+.d3 {
+  grid-area: d3;
+}
+
+.d4 {
+  grid-area: d4;
+}
+
+.d5 {
+  grid-area: d5;
+}
+
+.d6 {
+  grid-area: d6;
+}
+
+.ult-lanza {
+  padding: 20px;
+  margin: 40px;
+  background-color: #2B3035;
+}
+.ult-lanza img {
+  width: 250px;
+  border-radius: 12px;
+}
+.ult-lanza p {
+  font-family: serif;
+  font-size: small;
+}
+
+.laptra {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media (min-width: 500px) {
+  .ult-lanza img {
+    width: 350px;
+  }
+}
+@media (min-width: 768px) {
+  .ult-lanza {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "tapa repro" "laptra laptra";
+    gap: 5px;
+  }
+  .ult-lanza img {
+    width: 352px;
+  }
+}
+@media (min-width: 992px) {
+  .ult-lanza img {
+    width: 450px;
+  }
+}
+@media (min-width: 1200px) {
+  .ult-lanza img {
+    width: 600px;
+  }
+}
+
+.repro {
+  grid-area: repro;
+}
+@media (min-width: 500px) {
+  .repro {
+    width: 350px;
+  }
+}
+@media (min-width: 768px) {
+  .repro {
+    height: 352px;
+  }
+}
+@media (min-width: 992px) {
+  .repro {
+    height: 450px;
+    width: 450px;
+  }
+}
+@media (min-width: 1200px) {
+  .repro {
+    height: 600px;
+    width: 600px;
+  }
+}
+
+.laptra {
+  grid-area: laptra;
+}
+
+.tapa {
+  grid-area: tapa;
+}
+@media (min-width: 768px) {
+  .tapa {
+    display: flex;
+    justify-self: flex-end;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

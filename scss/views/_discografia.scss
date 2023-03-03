@@ -1,0 +1,64 @@
+.disco {
+	@include boxModel (20px, 40px);
+	background-color: $colorAcento;
+	@include flex(flex, column, flex-start, center);
+		p {
+		font-family: $fontSecundaria;
+		font-size: small;
+	}
+	h2 {
+		padding: 20px;
+	}
+	@include xxl(){
+		img{
+			width: 450px;
+		}
+	}
+}
+.plataformas {
+	img {
+		height: 50px;
+		width: 50px;
+		margin: 5px;
+	}
+}
+.songs {
+	padding: 25px;
+	width: 300px;
+	li{
+		list-style-position: inside
+	}
+}
+
+.griddiscos{
+	@include md(){
+		@include gridTemp(2,4);
+		grid-template-areas: "title title" "d1 d2" "d3 d4" "d5 d6";
+		justify-content: space-evenly
+	}
+	@include lg(){
+		@include gridTemp(3,3);
+		grid-template-areas: "title title title" "d1 d2 d3" "d4 d5 d6";
+	}
+}
+.title2 {
+	grid-area: title;
+}
+.d1 {
+	grid-area: d1;
+}
+.d2 {
+	grid-area: d2;
+}
+.d3 {
+	grid-area: d3;
+}
+.d4 {
+	grid-area: d4;
+}
+.d5 {
+	grid-area: d5;
+}
+.d6 {
+	grid-area: d6;
+}

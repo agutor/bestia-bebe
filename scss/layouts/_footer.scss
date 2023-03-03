@@ -1,0 +1,11 @@
+footer {
+	background-color: $colorAcento;
+	@include flex (flex, row, center, flex-end);
+	margin-bottom: 0;
+	ul {
+		img {
+			margin: 10px;
+		}
+	}
+}
+

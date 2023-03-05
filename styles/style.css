@@ -173,7 +173,6 @@ footer ul img {
   word-spacing: 3px;
   margin-top: 5px;
 }
-
 @media (min-width: 1200px) {
   .bio {
     display: flex;
@@ -181,6 +180,9 @@ footer ul img {
     justify-content: center;
     align-items: flex-start;
   }
+}
+
+@media (min-width: 1200px) {
   .gridbio {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -188,6 +190,7 @@ footer ul img {
     grid-template-areas: "fotos texto";
   }
 }
+
 .carousel {
   grid-area: fotos;
 }

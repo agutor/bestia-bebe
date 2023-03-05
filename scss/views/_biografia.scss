@@ -8,12 +8,14 @@
 		word-spacing: 3px;
 		margin-top: 5px
 	}
+	@include xl(){
+			@include flex(flex, row, center, flex-start)
+		}
 }
-@include xl(){
-	.bio{
-		@include flex(flex, row, center, flex-start)
-	}
-	.gridbio{
+
+
+.gridbio{
+	@include xl(){
 		@include gridTemp (2,1);
 		grid-template-areas: "fotos texto";
 	}

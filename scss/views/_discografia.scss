@@ -16,9 +16,8 @@
 	}
 }
 .plataformas {
-	img {
-		height: 50px;
-		width: 50px;
+	align-items: baseline;
+	li{
 		margin: 5px;
 	}
 }
@@ -36,7 +35,7 @@
 		grid-template-areas: "title title" "d1 d2" "d3 d4" "d5 d6";
 		justify-content: space-evenly
 	}
-	@include lg(){
+	@include xl(){
 		@include gridTemp(3,3,1fr);
 		grid-template-areas: "title title title" "d1 d2 d3" "d4 d5 d6";
 	}

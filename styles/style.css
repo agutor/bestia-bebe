@@ -73,8 +73,12 @@ footer {
   align-items: flex-end;
   margin-bottom: 0;
 }
-footer ul img {
-  margin: 10px;
+footer ul {
+  margin-top: 10px;
+}
+footer ul li {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .uno, .dos, .tres {
@@ -244,9 +248,10 @@ footer ul img {
   }
 }
 
-.plataformas img {
-  height: 50px;
-  width: 50px;
+.plataformas {
+  align-items: baseline;
+}
+.plataformas li {
   margin: 5px;
 }
 
@@ -267,7 +272,7 @@ footer ul img {
     justify-content: space-evenly;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .griddiscos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -344,10 +349,10 @@ footer ul img {
 }
 @media (min-width: 992px) {
   .ult-lanza img {
-    width: 450px;
+    width: 430px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .ult-lanza img {
     width: 600px;
   }
@@ -368,11 +373,11 @@ footer ul img {
 }
 @media (min-width: 992px) {
   .repro {
-    height: 450px;
-    width: 450px;
+    height: 430px;
+    width: 430px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .repro {
     height: 600px;
     width: 600px;
@@ -381,6 +386,9 @@ footer ul img {
 
 .laptra {
   grid-area: laptra;
+}
+.laptra a {
+  margin-left: 4px;
 }
 
 .tapa {

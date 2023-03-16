@@ -30,10 +30,10 @@
 	}
 	@include lg(){
 		img {
-			width: 450px;
+			width: 430px;
 		}
 	}
-	@include xl(){
+	@include xxl(){
 		img {
 			width: 600px;
 		}
@@ -48,16 +48,19 @@
 		height: 352px;
 	}
 	@include lg(){
-		height: 450px;
-		width: 450px;
+		height: 430px;
+		width: 430px;
 	}
-	@include xl(){
+	@include xxl(){
 		height: 600px;
 		width: 600px;
 	}
 }
 .laptra {
 	grid-area: laptra;
+	a{
+		margin-left: 4px;
+	}
 }
 .tapa {
 	grid-area: tapa;

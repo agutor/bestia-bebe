@@ -34,9 +34,6 @@ p{
 a {
 	color: $colorAcento;
 	text-decoration: none;
-	&:visited {
-		color: $colorAcento;
-	}
 	&:hover {
 		color: $colorPrincipal;
 	}
@@ -48,14 +45,7 @@ img{
 	border-radius: 6px;
 	// border: 2px solid $colorPrincipal
 }
-.btn-outline-light{
-	margin-top: 20px;
-	--bs-btn-color: #f0dfb0;
-	--bs-btn-border-color: #f0dfb0;
-	--bs-btn-hover-color: #f0dfb0;
-	--bs-btn-hover-bg: #17132a;
-	--bs-btn-hover-border-color: #17132a;
-}
+
 .btn-primary{
 	--bs-btn-color: #17132a;
 	--bs-btn-bg: #f0dfb0;

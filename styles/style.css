@@ -43,9 +43,6 @@ a {
   color: #f0dfb0;
   text-decoration: none;
 }
-a:visited {
-  color: #f0dfb0;
-}
 a:hover {
   color: #17132a;
 }
@@ -55,15 +52,6 @@ a:active {
 
 img {
   border-radius: 6px;
-}
-
-.btn-outline-light {
-  margin-top: 20px;
-  --bs-btn-color: #17132a;
-  --bs-btn-border-color: #f0dfb0;
-  --bs-btn-hover-color: #f0dfb0;
-  --bs-btn-hover-bg: #17132a;
-  --bs-btn-hover-border-color: #17132a;
 }
 
 .btn-primary {
@@ -119,6 +107,9 @@ footer .copy {
   justify-content: center;
   align-items: center;
   border-radius: 6px;
+}
+.uno .btn, .dos .btn, .tres .btn {
+  margin-top: 20px;
 }
 
 .font-contraste1 {

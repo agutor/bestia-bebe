@@ -4,6 +4,9 @@
 	border: 1px solid $colorAcento;
 	@include flex(flex, column, center,center);
 	border-radius: 6px;
+	.btn{
+		margin-top: 20px;
+	}
 }
 .font-contraste1{
     color: $colorPrincipal;

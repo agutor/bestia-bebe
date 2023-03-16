@@ -3,10 +3,13 @@
 	background-color: $colorAcento;
 	p {
 		font-size: 20px;
-		line-height: 20px;
-		letter-spacing: 2px;
-		word-spacing: 3px;
-		margin-top: 5px
+		line-height: 30px;
+		margin-top: 25px;
+		@include xl(){
+			letter-spacing: 1px;
+			word-spacing: 3px;
+			margin-left: 5px;
+		}
 	}
 	@include xl(){
 			@include flex(flex, row, center, flex-start)
@@ -16,13 +19,28 @@
 
 .gridbio{
 	@include xl(){
-		@include gridTemp (2,1);
-		grid-template-areas: "fotos texto";
+		@include gridTemp (2,5);
+		grid-template-areas: "fotos p1""fotos p2""fotos p3""fotos p4""fotos p5";
 	}
 }
 .carousel {
 	grid-area: fotos;
+	@include xl(){
+		width: 700px;
+	}
 }
-.texto {
-	grid-area: texto;
+.p1 {
+	grid-area: p1;
+}
+.p2 {
+	grid-area: p2;
+}
+.p3 {
+	grid-area: p3;
+}
+.p4 {
+	grid-area: p4;
+}
+.p5 {
+	grid-area: p5;
 }

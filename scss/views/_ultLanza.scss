@@ -1,6 +1,8 @@
 .ult-lanza {
 	@include boxModel(20px, 40px);
-	background-color: $colorAcento;
+	background-color: $colorSecundario;
+	border: 1px solid $colorAcento;
+	border-radius: 6px;
 	img {
 		width: 250px;
 		border-radius: 12px;

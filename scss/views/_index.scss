@@ -1,14 +1,18 @@
 .uno, .dos, .tres{
 	@include boxModel (40px, 40px);
-	background-color: $colorAcento;
+	background-color: $colorSecundario;
+	border: 1px solid $colorAcento;
 	@include flex(flex, column, center,center);
+	border-radius: 6px;
 }
 .font-contraste1{
-    color: $color_2;
+    color: $colorPrincipal;
 }
 .card{
     width: 18rem;
     margin-bottom: 35px;
+	background-color: $colorSecundario;
+	border: 1px solid $colorAcento;
 }
 #carouselxxl .card{
     width: 20rem;
@@ -44,7 +48,7 @@
 }
 .font-contraste2 {
 	@include sm(){
-		color: $color_2;
+		color: $colorPrincipal;
 	}
 }
 .show{

@@ -1,6 +1,8 @@
 .bio {
 	@include boxModel (10px, 40px);
-	background-color: $colorAcento;
+	background-color: $colorSecundario;
+	border: 1px solid $colorAcento;
+	border-radius: 6px;
 	p {
 		font-size: 20px;
 		line-height: 30px;
@@ -23,7 +25,7 @@
 		grid-template-areas: "fotos p1""fotos p2""fotos p3""fotos p4""fotos p5";
 	}
 }
-.carousel {
+.caroubio {
 	grid-area: fotos;
 	@include xl(){
 		width: 700px;

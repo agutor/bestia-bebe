@@ -1,5 +1,6 @@
 footer {
-	background-color: $colorAcento;
+	border-top: 1px solid $colorAcento;
+	background-color: $colorSecundario;
 	margin-bottom: 0;
 	ul {
 		@include flex (flex, row, center, flex-end);

@@ -1,12 +1,14 @@
 .navbar {
+	background-color: $colorSecundario;
+	border-bottom: 1px solid $colorAcento;
 	.navbar-brand {
 		img {
 			height: 80px;
 			margin-left: 15px;
+			border: none;
 		}
 	}
 	ul {
-		
 		li {
 			font-size: 20px;
 		}

@@ -1,13 +1,17 @@
 footer {
 	background-color: $colorAcento;
-	@include flex (flex, row, center, flex-end);
 	margin-bottom: 0;
 	ul {
+		@include flex (flex, row, center, flex-end);
 		margin-top: 10px;
 		li{
 			margin-left: 10px;
 			margin-right: 10px;
 		}
+	}
+	.copy{
+		font-family: $fontSecundaria;
+		margin-bottom: 20px;
 	}
 }
 

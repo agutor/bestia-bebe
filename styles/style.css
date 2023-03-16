@@ -316,7 +316,12 @@ footer .copy {
 .disco p {
   margin-top: 5px;
   font-family: serif;
-  font-size: medium;
+  font-size: small;
+}
+@media (min-width: 768px) {
+  .disco p {
+    font-size: medium;
+  }
 }
 .disco h2 {
   padding: 10px;
@@ -403,7 +408,12 @@ footer .copy {
 }
 .ult-lanza p {
   font-family: serif;
-  font-size: medium;
+  font-size: small;
+}
+@media (min-width: 768px) {
+  .ult-lanza p {
+    font-size: medium;
+  }
 }
 
 .laptra {

@@ -9,7 +9,10 @@
 	}
 	p {
 		font-family: $fontSecundaria;
-		font-size: medium;
+		font-size: small;
+		@include md(){
+			font-size: medium;
+		}
 	}
 }
 .laptra {

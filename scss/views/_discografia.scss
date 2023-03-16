@@ -7,7 +7,10 @@
 	p {
 		margin-top: 5px;
 		font-family: $fontSecundaria;
-		font-size: medium;
+		font-size: small;
+		@include md(){
+			font-size: medium;
+		}
 	}
 	h2 {
 		padding: 10px;

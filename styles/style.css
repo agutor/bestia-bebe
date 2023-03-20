@@ -326,7 +326,7 @@ footer .copy {
 .plataformas {
   align-items: baseline;
   --fa-animation-iteration-count:2;
-  --fa-animation-delay: 500ms;
+  --fa-animation-delay: 750ms;
   --fa-beat-scale:1.5;
 }
 .plataformas li {

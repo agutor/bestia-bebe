@@ -7,7 +7,7 @@
 body {
   font-family: "Roboto Condensed", sans-serif;
   color: white;
-  background-color: #17132a;
+  background-color: #281d2d;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -44,10 +44,10 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #17132a;
+  color: #281d2d;
 }
 a:active {
-  color: #17132a;
+  color: #281d2d;
 }
 
 img {
@@ -64,7 +64,7 @@ img {
 }
 
 .navbar {
-  background-color: #f47e2f;
+  background-color: #c1354e;
   border-bottom: 1px solid #ffeeb8;
 }
 .navbar .navbar-brand img {
@@ -78,7 +78,7 @@ img {
 
 footer {
   border-top: 1px solid #ffeeb8;
-  background-color: #f47e2f;
+  background-color: #c1354e;
   margin-bottom: 0;
 }
 footer ul {
@@ -100,7 +100,7 @@ footer .copy {
 .uno, .dos, .tres {
   padding: 40px;
   margin: 40px;
-  background-color: #f47e2f;
+  background-color: #c1354e;
   border: 1px solid #ffeeb8;
   display: flex;
   flex-direction: column;
@@ -113,13 +113,13 @@ footer .copy {
 }
 
 .font-contraste1 {
-  color: #17132a;
+  color: #281d2d;
 }
 
 .card {
   width: 18rem;
   margin-bottom: 35px;
-  background-color: #f47e2f;
+  background-color: #c1354e;
   border: 1px solid #ffeeb8;
 }
 
@@ -171,7 +171,7 @@ footer .copy {
 
 @media (min-width: 500px) {
   .font-contraste2 {
-    color: #17132a;
+    color: #281d2d;
   }
 }
 
@@ -191,7 +191,7 @@ footer .copy {
 .bio {
   padding: 10px;
   margin: 40px;
-  background-color: #f47e2f;
+  background-color: #c1354e;
   border: 1px solid #ffeeb8;
   border-radius: 6px;
 }
@@ -268,7 +268,7 @@ footer .copy {
   margin-bottom: 40px;
   border-radius: 6px;
   text-align: left;
-  background-color: #f47e2f;
+  background-color: #c1354e;
   border: 1px solid #ffeeb8;
   line-height: 21px;
 }
@@ -284,11 +284,11 @@ footer .copy {
 
 .form-select {
   border: #ffeeb8;
-  color: #17132a;
+  color: #281d2d;
 }
 
 .input-group-text {
-  color: #17132a;
+  color: #281d2d;
   background-color: #ffeeb8;
   border: #ffeeb8;
 }
@@ -296,7 +296,7 @@ footer .copy {
 .disco {
   padding: 20px;
   margin: 40px;
-  background-color: #f47e2f;
+  background-color: #c1354e;
   border: 1px solid #ffeeb8;
   border-radius: 6px;
   display: flex;
@@ -392,7 +392,7 @@ footer .copy {
 .ult-lanza {
   padding: 20px;
   margin: 40px;
-  background-color: #f47e2f;
+  background-color: #c1354e;
   border: 1px solid #ffeeb8;
   border-radius: 6px;
 }

@@ -6,7 +6,7 @@
 
 body {
   font-family: "Roboto Condensed", sans-serif;
-  color: black;
+  color: white;
   background-color: #17132a;
   text-align: center;
   display: flex;
@@ -19,11 +19,6 @@ h1, h2 {
   padding: 20px;
   margin: 20px;
   margin-top: 150px;
-  color: white;
-}
-
-.tituloColor {
-  color: black;
 }
 
 h2 {

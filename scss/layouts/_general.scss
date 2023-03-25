@@ -17,10 +17,6 @@ h1, h2 {
 	font-size: 50px;
 	@include boxModel (20px, 20px);
 	margin-top: 150px;
-	color: $fontTitulo;
-}
-.tituloColor{
-	color:$fontColor;
 }
 h2{
     margin-top: 0;

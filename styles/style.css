@@ -40,7 +40,7 @@ p {
 }
 
 a {
-  color: #ead9c0;
+  color: #e8d5be;
   text-decoration: none;
 }
 a:hover {
@@ -65,7 +65,7 @@ img {
 
 .navbar {
   background-color: #f47e2f;
-  border-bottom: 1px solid #ead9c0;
+  border-bottom: 1px solid #e8d5be;
 }
 .navbar .navbar-brand img {
   height: 80px;
@@ -77,7 +77,7 @@ img {
 }
 
 footer {
-  border-top: 1px solid #ead9c0;
+  border-top: 1px solid #e8d5be;
   background-color: #f47e2f;
   margin-bottom: 0;
 }
@@ -101,7 +101,7 @@ footer .copy {
   padding: 40px;
   margin: 40px;
   background-color: #f47e2f;
-  border: 1px solid #ead9c0;
+  border: 1px solid #e8d5be;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,7 +120,7 @@ footer .copy {
   width: 18rem;
   margin-bottom: 35px;
   background-color: #f47e2f;
-  border: 1px solid #ead9c0;
+  border: 1px solid #e8d5be;
 }
 
 #carouselxxl .card {
@@ -192,7 +192,7 @@ footer .copy {
   padding: 10px;
   margin: 40px;
   background-color: #f47e2f;
-  border: 1px solid #ead9c0;
+  border: 1px solid #e8d5be;
   border-radius: 6px;
 }
 .bio p {
@@ -269,7 +269,7 @@ footer .copy {
   border-radius: 6px;
   text-align: left;
   background-color: #f47e2f;
-  border: 1px solid #ead9c0;
+  border: 1px solid #e8d5be;
   line-height: 21px;
 }
 
@@ -279,25 +279,25 @@ footer .copy {
 }
 
 .form-control {
-  border: #ead9c0;
+  border: #e8d5be;
 }
 
 .form-select {
-  border: #ead9c0;
+  border: #e8d5be;
   color: #17132a;
 }
 
 .input-group-text {
   color: #17132a;
-  background-color: #ead9c0;
-  border: #ead9c0;
+  background-color: #e8d5be;
+  border: #e8d5be;
 }
 
 .disco {
   padding: 20px;
   margin: 40px;
   background-color: #f47e2f;
-  border: 1px solid #ead9c0;
+  border: 1px solid #e8d5be;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
@@ -393,7 +393,7 @@ footer .copy {
   padding: 20px;
   margin: 40px;
   background-color: #f47e2f;
-  border: 1px solid #ead9c0;
+  border: 1px solid #e8d5be;
   border-radius: 6px;
 }
 .ult-lanza img {
